@@ -38,8 +38,7 @@ a:hover
     text-decoration: none;
     color: rgb(194, 194, 194);
 }
-
-.attributes
+.attributes input
 {
     margin-left: 40px;
 }
@@ -47,5 +46,21 @@ a:hover
     margin-top: 80px; /* Adjust this value to leave space for the navbar */
     padding: 20px;
     /*text-align: center;*/
+}
+.content h5
+{
+    display: inline-block;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+#input-level
+{
+    width:40px;
+}
+
+#input-profi
+{
+    width:40px;
 }
 

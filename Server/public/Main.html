@@ -11,69 +11,86 @@
 
 <body>
 
-<nav>
-    <ul>
-    <h2><a href="/main.html">Info</a></h2>
-    <h2><a href="/character.html">Character</a></h2>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+        <h2><a href="/main.html">Info</a></h2>
+        <h2><a href="/character.html">Character</a></h2>
+        </ul>
+    </nav>
 
-<div class="content">
-    <h1>Character Sheet</h1> 
-    <button onclick="SaveData()">Save</button>
-    <dl>
-        <dt>Character Name</dt> 
-        <input id = "char-name">
-        <dt>Race</dt>
-        <input>
-        <dt>Class</dt>
-        <input>
-        <dt>Level</dt>
-        <input size = 2>
-        <dt>Proficiency</dt>
-        <input size = 2>
-        <br><br><dt>Attributes</dt>
-            <dd>Strength</dd>
-            <input size = 2 class = "attributes">
-            <dd>Dexterity</dd>
-            <input size = 2 class = "attributes">
-            <dd>Constitution</dd>
-            <input size = 2 class = "attributes">
-            <dd>Intelligence</dd>
-            <input size = 2 class = "attributes">
-            <dd>Wisdom</dd>
-            <input size = 2 class = "attributes">
-            <dd>Charisma</dd>
-            <input size = 2 class = "attributes">
-            
-        <br><br><dt>Skills</dt>
-            <dd>Acrobatics</dd>
-            <dd>Animal Handling</dd>
-            <dd>Arcana</dd>
-            <dd>Athletics</dd>
-            <dd>Deception</dd>
-            <dd>History</dd>
-            <dd>Insight</dd>
-            <dd>Intimidation</dd>
-            <dd>Investigation</dd>
-            <dd>Medicine</dd>
-            <dd>Nature</dd>
-            <dd>Perception</dd>
-            <dd>Performance</dd>
-            <dd>Persuasion</dd>
-            <dd>Religion</dd>
-            <dd>Sleight of Hand</dd>
-            <dd>Stealth</dd>
-            <dd>Survival</dd>
-        <br><dt>Features</dt>
-        <input class = "bigger-input">
-        <dt>Equipment</dt>
-        <input class = "bigger-input">
-        <dt>Spells</dt>
-        <input class = "bigger-input">
-    </dl>
+    <div class="content">
 
-</div>
+        <h1>Info</h1> 
+        <button onclick="SaveData()">Save</button>
+        <h5 id = "saved" ></h5>
+            <div class = "bio">
+                <dl>
+                    <dt>Name</dt> 
+                    <input id = "input-name">
+                    <dt>Race</dt>
+                    <input id = "input-race">
+                    <dt>Class</dt>
+                    <input id = "input-class">
+                    <dt>Level</dt>
+                    <input type="number" id = "input-level">
+                    <dt>Proficiency</dt>
+                    <input type="number" id = "input-profi">
+                </dl>
+            </div>
+
+            <div class = "attributes"> 
+                <dl>
+                    <br><dt>Attributes</dt>
+                        <dd>Strength</dd>
+                        <input size = 2>
+                        <dd>Dexterity</dd>
+                        <input size = 2>
+                        <dd>Constitution</dd>
+                        <input size = 2>
+                        <dd>Intelligence</dd>
+                        <input size = 2>
+                        <dd>Wisdom</dd>
+                        <input size = 2>
+                        <dd>Charisma</dd>
+                        <input size = 2>
+                </dl>
+
+            </div>
+
+            <div class="skills"> 
+                <dl>
+                    <br><br><dt>Skills</dt>
+                        <dd>Acrobatics</dd>
+                        <dd>Animal Handling</dd>
+                        <dd>Arcana</dd>
+                        <dd>Athletics</dd>
+                        <dd>Deception</dd>
+                        <dd>History</dd>
+                        <dd>Insight</dd>
+                        <dd>Intimidation</dd>
+                        <dd>Investigation</dd>
+                        <dd>Medicine</dd>
+                        <dd>Nature</dd>
+                        <dd>Perception</dd>
+                        <dd>Performance</dd>
+                        <dd>Persuasion</dd>
+                        <dd>Religion</dd>
+                        <dd>Sleight of Hand</dd>
+                        <dd>Stealth</dd>
+                        <dd>Survival</dd>
+                </dl>
+            </div>
+
+            <dl>
+            <br><dt>Features</dt>
+                <input class = "bigger-input">
+                <dt>Equipment</dt>
+                <input class = "bigger-input">
+                <dt>Spells</dt>
+                <input class = "bigger-input">
+            </dl>
+
+    </div>
 
 </body>
 </html>
