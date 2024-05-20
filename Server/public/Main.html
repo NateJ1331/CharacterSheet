@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character Sheet</title>
+    <link rel="icon" href="icon.png" type="image/x-icon"/>
     <link href="mainStyle.css" rel="stylesheet"  type="text/css">
-    <script src="mainScript.js" defer></script>
+    <script src="Script.js" defer></script>
 </head>
 
 <body>
 
-<div class="navbar">
-    <h2>Character Sheet</h2> 
-    <h2>Character</h2>
-</div>
+<nav>
+    <ul>
+    <h2><a href="/main.html">Info</a></h2>
+    <h2><a href="/character.html">Character</a></h2>
+    </ul>
+</nav>
 
 <div class="content">
     <h1>Character Sheet</h1> 
@@ -21,7 +24,6 @@
     <dl>
         <dt>Character Name</dt> 
         <input id = "char-name">
-        <dt id = "print"></dt> 
         <dt>Race</dt>
         <input>
         <dt>Class</dt>
@@ -63,7 +65,9 @@
             <dd>Sleight of Hand</dd>
             <dd>Stealth</dd>
             <dd>Survival</dd>
-        <br><dt>Equipment</dt>
+        <br><dt>Features</dt>
+        <input class = "bigger-input">
+        <dt>Equipment</dt>
         <input class = "bigger-input">
         <dt>Spells</dt>
         <input class = "bigger-input">
