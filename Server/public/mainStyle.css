@@ -41,6 +41,7 @@ a:hover
 .attributes input
 {
     margin-left: 40px;
+    width: 40px;
 }
 .content {
     margin-top: 80px; /* Adjust this value to leave space for the navbar */
@@ -62,9 +63,4 @@ a:hover
 #input-profi
 {
     width:40px;
-}
-
-.attributes input
-{
-    width: 40px;
 }

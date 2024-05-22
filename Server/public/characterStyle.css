@@ -50,15 +50,36 @@ a:hover
     padding: 20px;
     text-align: center;
 }
+.bio
+{
+    border: double;
 
-.bio dt:nth-child(odd) {
+}
+.bio dt:nth-child(odd) 
+{
     font-weight: bold;
-  }
-
+}
 .bio dt
 {
-    margin-right:5px;
     display: inline-block;
 }
 
-
+.attributes
+{
+    border: double;
+}
+.attributes dl
+{
+    text-align: left;
+    row-gap: 5px;
+    display:inline-grid;
+}
+.attributes dd
+{
+    grid-column:1;
+}
+.attributes dd
+{
+    text-align: right;
+    grid-column:2;
+}
