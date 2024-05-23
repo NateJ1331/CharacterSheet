@@ -41,14 +41,10 @@ a:hover
     color: rgb(194, 194, 194);
 }
 
-.attributes
-{
-    margin-left: 40px;
-}
 .content {
     margin-top: 80px; /* Adjust this value to leave space for the navbar */
     padding: 20px;
-    text-align: center;
+
 }
 .bio
 {
@@ -67,6 +63,7 @@ a:hover
 .attributes
 {
     border: double;
+    text-align: left;
 }
 .attributes dl
 {

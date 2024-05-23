@@ -22,7 +22,6 @@ nav h2 {
 a:link
 {
     text-decoration: none;
-   
 }
 a:active
 {
@@ -53,6 +52,11 @@ a:hover
     display: inline-block;
     margin-top: -50px;
     margin-bottom: -50px;
+}
+
+.skills input
+{
+    vertical-align: right;
 }
 
 #input-level
