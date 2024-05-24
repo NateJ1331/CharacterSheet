@@ -67,15 +67,34 @@ a:hover
 }
 .attributes dl
 {
-    text-align: left;
     row-gap: 5px;
     display:inline-grid;
 }
-.attributes dd
+.attributes dt
 {
     grid-column:1;
 }
-.attributes dd
+.attributes .value
+{
+    text-align: right;
+    grid-column:2;
+}
+.attributes .bonus
+{
+    text-align: right;
+    grid-column:3;
+}
+
+.skills dl
+{
+    row-gap: 5px;
+    display:inline-grid;
+}
+.skills dt
+{
+    grid-column:1;
+}
+.skills dd
 {
     text-align: right;
     grid-column:2;

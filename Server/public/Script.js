@@ -8,16 +8,13 @@ function SaveData()
 {
     var inputs = document.querySelectorAll("input");
     inputs.forEach(function(input) {
-        var value = input.value.trim();
-        if (value) {
+        if (input.type === 'checkbox') {
+            localStorage.setItem(input.id, input.checked ? '3' : '0');
+        } else {
+            var value = input.value.trim();
             localStorage.setItem(input.id, value);
         }
     });
-
-    if(document.querySelector("#profi-athletics").checked)
-    {
-        localStorage.setItem('athletics', 3)
-    }
 
     document.querySelector("#saved").innerHTML = "Saved";
 
@@ -25,13 +22,27 @@ function SaveData()
 
 function get() 
 {
-    var inputFields = ['name', 'race', 'class', 'level', 'profi', 'strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma'];
+    var bioInputs = ['name', 'race', 'class', 'level', 'profi'];
+    var attInputs = [ 'strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma'];
+    var skillInputs = ['acrobatics','animalhandling','arcana','athletics','deception','history','insight','intimidation','investigation','medicine','nature','perception','performance','persuasion','religion','sleightofhand','stealth','survival']
 
-    inputFields.forEach(function(field) {
-        var value = localStorage.getItem('input-' + field);
+    bioInputs.forEach(function(input) {
+        var value = localStorage.getItem('input-' + input);
+        document.querySelector("#" + input).innerHTML = (input === 'profi') ? "+" + value : value;
+    }); 
 
-        document.querySelector("#" + field).innerHTML = (field === 'profi') ? "+" + value : value;
+    attInputs.forEach(function(att) {
+        var value = localStorage.getItem('input-' + att);
+        var bonus = CalculateBonus(value);
+
+        document.querySelector("#" + att).innerHTML = value;
+        document.querySelector("#" + att + "-att").innerHTML = (bonus >= 0) ? "+" + bonus : bonus;    
+    });  
+
+    skillInputs.forEach(function(skill)
+    {
+        var skillvalue  = localStorage.getItem('profi-'+ skill);
+        document.querySelector("#" + skill).innerHTML ="+" + skillvalue;
     });
 
-    document.querySelector("#athletics").innerHTML = localStorage.getItem('athletics')
 }
