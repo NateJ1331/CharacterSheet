@@ -3,7 +3,8 @@
 This is a Dungeons and Dragons 5e Character sheet
 I made it because I didnt like how complicated the ones online can be so I wanted something that felt similiar to just pen and paper but had the 
 accesibilty of a website
-accessibility
+accessibility. Currently the website can only be used if you have the files since its hosted locally using node.js
+
 [Website Demo Video](https://www.youtube.com/watch?v=Q0UCUBzPkoo)
 
 # Web Pages
