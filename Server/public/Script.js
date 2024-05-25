@@ -1,12 +1,15 @@
+//calculates bonus for attribute bonus
 function CalculateBonus(int)
 {
     return Math.floor((int - 10)/2)
 }
-
+//deletes everything
 function DeleteStorage()
 {
     localStorage.clear();
 }
+
+//saves all data thats been inputed
 function SaveData()
 {
     var inputs = document.querySelectorAll("input");
@@ -31,19 +34,19 @@ function SaveData()
 
 }
 
-function get() 
+function get() // Loads all info
 {
     var bioInputs = ['name', 'race', 'class', 'level', 'profi'];
     var attInputs = [ 'strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma'];
     var skillInputs = ['acrobatics','animalhandling','arcana','athletics','deception','history','insight','intimidation','investigation','medicine','nature','perception','performance','persuasion','religion','sleightofhand','stealth','survival']
-    var textInputs = ['feats','spells'];
+    var textInputs = ['feats','spells']
 
-
+    //loads stuff that came from the bio class in the first page
     bioInputs.forEach(function(input) {
         var value = localStorage.getItem('input-' + input);
         document.querySelector("#" + input).innerHTML = (input === 'profi') ? "+" + value : value;
     }); 
-
+    //loads stuff that came from the attribute class in the first page
     attInputs.forEach(function(att) {
         var value = localStorage.getItem('input-' + att);
         var bonus = CalculateBonus(value);
@@ -52,6 +55,7 @@ function get()
         document.querySelector("#" + att + "-att").innerHTML = (bonus >= 0) ? "+" + bonus : bonus;    
     });  
 
+    //loads stuff that came from the skill class in the first page
     skillInputs.forEach(function(skill)
     {
          var skillbonus = parseFloat(localStorage.getItem('profi-' + skill), 10); 
@@ -82,12 +86,14 @@ function get()
             document.querySelector("#" + skill).innerHTML = skillvalue;
         }
     });
-
-    textInputs.forEach(function(text) {
+    //loads stuff that came from the extrainfo class in the first page while also makes it look nice and not all jammed togehter
+    textInputs.forEach(function(text){
         var storedValue = localStorage.getItem("input-" + text);
         if (storedValue !== null) {
-            document.querySelector("#" + text).innerHTML = storedValue;
+            var displayElement = document.querySelector("#" + text);
+            var formattedText = storedValue.replace(/\n/g, '<br>').replace(/ /g, '&nbsp;'); 
+            displayElement.innerHTML = formattedText;
         }
     });
-
+    
 }
