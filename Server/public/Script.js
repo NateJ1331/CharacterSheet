@@ -27,7 +27,10 @@ function SaveData()
 
     var textboxes = document.querySelectorAll("textarea");
     textboxes.forEach(function(text) {
-        localStorage.setItem(text.id, text.value);
+        if(text.value)
+        {
+            localStorage.setItem(text.id, text.value);
+        }
     });
 
     document.querySelector("#saved").innerHTML = "Saved";
