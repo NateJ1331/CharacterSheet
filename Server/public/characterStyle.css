@@ -99,3 +99,10 @@ a:hover
     text-align: right;
     grid-column:2;
 }
+
+.extrainfo
+{
+    border-style: double;
+    max-width: 1000px;
+    word-wrap: break-word;
+}

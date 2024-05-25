@@ -52,13 +52,33 @@ a:hover
     margin-top: -50px;
     margin-bottom: -50px;
 }
-
-#input-level
+.bio input[type = number]
 {
-    width:40px;
+    width: 40px;
+}
+.skills
+{
+    display: grid;
+    row-gap: 0px;
+    width: 280px;
+   column-gap: 10px;
+}
+.skills label
+{
+    grid-column: 1;
 }
 
-#input-profi
+.skills input[type=checkbox]
 {
-    width:40px;
+    grid-column: 2;
+}
+.skills input[type=number]
+{
+    grid-column: 3;
+    width: 40px;
+}
+
+.extrainfo textarea
+{
+    resize: none;
 }
