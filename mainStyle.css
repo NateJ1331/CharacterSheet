@@ -19,11 +19,7 @@ nav h2 {
     margin-right: 20px;
 }
 
-a:link
-{
-    text-decoration: none;
-}
-a:active
+a:link, a:active
 {
     text-decoration: none;
 }
@@ -36,6 +32,17 @@ a:hover
 {
     text-decoration: none;
     color: rgb(194, 194, 194);
+}
+.title
+{
+    font-weight: bold;
+}
+.attributes
+{
+    border: solid;
+    height: 600px;
+    width: 280px;
+    padding-right: 15%;
 }
 .attributes input
 {
@@ -56,12 +63,18 @@ a:hover
 {
     width: 40px;
 }
+.skillsattributes
+{
+    display: flex;
+}
 .skills
 {
+    border: solid;
+    height: 600px;
     display: grid;
     row-gap: 0px;
     width: 280px;
-   column-gap: 10px;
+    column-gap: 10px;
 }
 .skills label
 {
