@@ -1,5 +1,3 @@
-
-
 //calculates bonus for attribute bonus
 function CalculateBonus(int)
 {
@@ -30,15 +28,29 @@ function SaveData()
             }
     });
     
-    document.querySelector("#saved").innerHTML = "Saved";
-    console.log(character)  
-
     textboxes.forEach(function(text) {
         if(text.value)
         {
             character[text.id] = text.value
         }
     });
+
+    document.querySelector("#saved").innerHTML = "Saved";
+
+    // Turn it into json
+    const jsonCharacter = JSON.stringify(character,null, 2)
+    console.log(jsonCharacter)
+    
+    const blob = new Blob([jsonCharacter], { type: "application/json" });
+
+    //When you click it dowloads it
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "character.json";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(a.href);
 }
     
 
