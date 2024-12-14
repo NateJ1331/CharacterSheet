@@ -1,97 +1,126 @@
 body {
-    background-color: #f5f5f5; /* off-white background */
+    background-color: #f5f5f5; 
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
+
 nav {
-    background-color: #535353; /* black navbar */
-    color: #fff; /* white text */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* add a shadow */
+    background-color: #535353; 
+    color: #fff; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
 }
+
 nav h2 {
     display: inline-block;
     margin-right: 20px;
 }
 
-a:link, a:active
-{
+a:link, a:active {
     text-decoration: none;
 }
-a:visited
-{
+
+a:visited {
     text-decoration: none;
     color: white;
 }
-a:hover
-{
+
+a:hover {
     text-decoration: none;
     color: rgb(194, 194, 194);
 }
-.title
-{
+
+.title {
     font-weight: bold;
 }
-.attributes
-{
-    border: solid;
-    height: 600px;
-    width: 280px;
-    padding-right: 15%;
-}
-.attributes input
-{
-    width: 40px;
-}
+
 .content {
-    margin-top: 80px; /* Adjust this value to leave space for the navbar */
+    margin-top: 80px; 
     padding: 20px;
-    /*text-align: center;*/
 }
-.content h5
-{
+
+.content h5 {
     display: inline-block;
     margin-top: -50px;
     margin-bottom: -50px;
 }
-.bio input[type = number]
-{
-    width: 40px;
+
+.skillsattributes {
+    display: flex; 
+    gap: 20px; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
 }
-.skillsattributes
-{
-    display: flex;
+
+.attributes, 
+.skills {
+    flex: 1; 
+    max-width: 300px; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; 
 }
-.skills
-{
-    border: solid;
-    height: 600px;
-    display: grid;
-    row-gap: 0px;
-    width: 280px;
-    column-gap: 10px;
+
+.attributes {
+    display: grid; 
+    grid-template-columns: 1fr auto; 
+    row-gap: 5px; 
 }
-.skills label
-{
+
+.attributes label {
+    padding-right: 140px;
     grid-column: 1;
 }
 
-.skills input[type=checkbox]
-{
+.attributes input {
+    grid-column: 2;
+    width: 40px;
+    height: 20px;
+}
+
+.skills {
+    display: grid; 
+    grid-template-columns: 1fr auto auto; 
+    row-gap: 5px; 
+    column-gap: 10px; 
+}
+
+.skills label {
+    padding-right: -80px;
+    grid-column: 1;
+}
+
+.skills input[type=checkbox] {
     grid-column: 2;
 }
-.skills input[type=number]
-{
+
+.skills input[type=number] {
     grid-column: 3;
     width: 40px;
 }
 
-.extrainfo textarea
-{
+.extrainfo textarea {
     resize: none;
+    width: 100%; 
+}
+
+.bio input[type=number] {
+    width: 40px;
+}
+
+@media (max-width: 768px) {
+    .skillsattributes {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .attributes, .skills {
+        max-width: 90%; 
+    }
 }
