@@ -20,12 +20,15 @@
         </nav>
     </header>
     <main>
-        <div class="content">
 
-            <h1>Info</h1> 
+        <title>This is the character creator this is where you will input all your stats you got from whatever other information you selected in the first section</title>
+
+        <div id="content">
+            <7h2>Character Sheet</h2>
             <button id = "save" onclick="SaveData()">Save</button>
             <h5 id = "saved" ></h5>
                 <div class = "bio">
+                    <p> Here you will input the Basic information About your character. The level will be decided between you and your DM (Dungeon Master) which will affect the proficiency bonus</p>
                     <dl>
                         <dt>Name</dt> 
                         <input id = "input-name">
@@ -40,6 +43,7 @@
                     </dl>
                 </div>
                 <div class = skillsattributes>
+                    <p>Here will be the spot where you put your main stats that will either be done through a point buy system or by rolling 4 d6 dice and dropping the lowest number</p>
                     <div class = "attributes"> 
                         <br><label class = "title">Attributes</label>
                         <br><br><label>Strength</label>
@@ -56,6 +60,7 @@
                         <input type = "number" id = "input-charisma">
                     </div>
 
+                    <p>These skills will be affected by the attributes you put in above. The proficiency bonus will be added to the skills you are proficient in which is decided by the class</p>
                     <div class="skills">
                         <br><label class = "title" >Skill Proficiency </label>
                         <br><label>(checkbox is +proficiency)</label>
@@ -118,6 +123,7 @@
 
                 <div class = "extrainfo" >
                     <dl>
+                        <p>Your features adn class are also decided by your class as well</p>
                     <br><dt class = "title">Features</dt>
                         <textarea rows = "5" cols = "50" id = "input-feats"></textarea>
                         <dt class = "title">Spells</dt>
