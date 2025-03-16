@@ -10,105 +10,113 @@
 </head>
 
 
-<nav>
-    <ul>
-    <h2><a href="index.html">Info</a></h2>
-    <h2><a href="character.html">Character</a></h2>
-    </ul>
-</nav>
+<header>
+    <nav>
+        <ul>
+        <h2><a href="index.html">Info</a></h2>
+        <h2><a href="sheet.html">Sheet</a></h2>
+        <h2><a href="character.html">Character</a></h2>
+        </ul>
+    </nav>
+</header>
+<main>
 
-<div class="content">
-    <h2>Character</h2>
-    
-    <button onclick="get()">Load</button>
+    <div class="content">
+        <h2>Character</h2>
+        
+        <button onclick="get()">Load</button>
 
-    <div class = bio>
-        <dl>
-            <dt>Name: </dt>
-            <dt id = "name"></dt>
-            <dt>Race: </dt>
-            <dt id = "race"></dt>
-            <dt>Class: </dt>
-            <dt id = "class"></dt>
-            <dt>Lv: </dt>
-            <dt id = "level" ></dt>
-            <dt>Proficiency: </dt>
-            <dt id = "profi" ></dt>
-        </dl>
+        <div class = bio>
+            <dl>
+                <dt>Name: </dt>
+                <dt id = "name"></dt>
+                <dt>Race: </dt>
+                <dt id = "race"></dt>
+                <dt>Class: </dt>
+                <dt id = "class"></dt>
+                <dt>Lv: </dt>
+                <dt id = "level" ></dt>
+                <dt>Proficiency: </dt>
+                <dt id = "profi" ></dt>
+            </dl>
+        </div>
+
+        <div class = "attributes">
+            <dl>
+                <dt>Strength: </dt>
+                <dd class = value id = "strength"></dd>
+                <dd class = bonus id = "strength-att"></dd>
+                <dt>Dexterity: </dt>
+                <dd class = value id = "dexterity"></dd>
+                <dd class = bonus id = "dexterity-att"></dd>
+                <dt>Constitution: </dt>
+                <dd class = value id = "constitution"></dd>
+                <dd class = bonus id = "constitution-att"></dd>
+                <dt>Intelligence: </dt>
+                <dd class = value id = "intelligence" ></dd>
+                <dd class = bonus id = "intelligence-att"></dd>
+                <dt>Wisdom: </dt>
+                <dd class = value id = "wisdom" ></dd>
+                <dd class = bonus id = "wisdom-att"></dd>
+                <dt>Charisma: </dt>
+                <dd class = value id = "charisma"></dd>
+                <dd class = bonus id = "charisma-att"></dd>
+            </dl>
+        </div>
+
+        <div class = "skills">
+            <dl>
+                <dt>Acrobatics: </dt>
+                <dd id = 'acrobatics' class = "dexterity"></dd>
+                <dt>Animal Handling: </dt>
+                <dd id = 'animalhandling' class = "wisdom"></dd>
+                <dt>Arcana: </dt>
+                <dd id = 'arcana' class = "intelligence"></dd>
+                <dt>Athletics: </dt>
+                <dd id = 'athletics' class = "strength"></dd>
+                <dt>Deception: </dt>
+                <dd id = 'deception' class = "charisma"></dd>
+                <dt>History: </dt>
+                <dd id = 'history' class = "intelligence"></dd>
+                <dt>Insight: </dt>
+                <dd id = 'insight' class = "wisdom"></dd>
+                <dt>Intimidation: </dt>
+                <dd id = 'intimidation' class = "charisma"></dd>
+                <dt>Investigation: </dt>
+                <dd id = 'investigation' class = "intelligence"></dd>
+                <dt>Medicine: </dt>
+                <dd id = 'medicine' class = "wisdom"></dd>
+                <dt>Nature: </dt>
+                <dd id = 'nature' class = "intelligence"></dd>
+                <dt>Perception: </dt>
+                <dd id = 'perception' class = "wisdom"></dd>
+                <dt>Performance: </dt>
+                <dd id = 'performance' class = "charisma"></dd>
+                <dt>Persuasion: </dt>
+                <dd id = 'persuasion' class = "charisma"></dd>
+                <dt>Religion: </dt>
+                <dd id = 'religion' class = "intelligence"></dd>
+                <dt>Sleight of Hand: </dt>
+                <dd id = 'sleightofhand' class = "dexterity"></dd>
+                <dt>Stealth: </dt>
+                <dd id = 'stealth' class = "dexterity"></dd>
+                <dt>Survival: </dt>
+                <dd id = 'survival' class = "wisdom"></dd>
+            </dl>
+        </div>
+
+        <div class = extrainfo>
+            <label>Feats:</label>
+            <div id= "feats"></div>
+            <br><label>Spells:</label>
+            <div id = "spells"></div>
+        </div>
     </div>
-
-    <div class = "attributes">
-        <dl>
-            <dt>Strength: </dt>
-            <dd class = value id = "strength"></dd>
-            <dd class = bonus id = "strength-att"></dd>
-            <dt>Dexterity: </dt>
-            <dd class = value id = "dexterity"></dd>
-            <dd class = bonus id = "dexterity-att"></dd>
-            <dt>Constitution: </dt>
-            <dd class = value id = "constitution"></dd>
-            <dd class = bonus id = "constitution-att"></dd>
-            <dt>Intelligence: </dt>
-            <dd class = value id = "intelligence" ></dd>
-            <dd class = bonus id = "intelligence-att"></dd>
-            <dt>Wisdom: </dt>
-            <dd class = value id = "wisdom" ></dd>
-            <dd class = bonus id = "wisdom-att"></dd>
-            <dt>Charisma: </dt>
-            <dd class = value id = "charisma"></dd>
-            <dd class = bonus id = "charisma-att"></dd>
-        </dl>
-    </div>
-
-    <div class = "skills">
-        <dl>
-            <dt>Acrobatics: </dt>
-            <dd id = 'acrobatics' class = "dexterity"></dd>
-            <dt>Animal Handling: </dt>
-            <dd id = 'animalhandling' class = "wisdom"></dd>
-            <dt>Arcana: </dt>
-            <dd id = 'arcana' class = "intelligence"></dd>
-            <dt>Athletics: </dt>
-            <dd id = 'athletics' class = "strength"></dd>
-            <dt>Deception: </dt>
-            <dd id = 'deception' class = "charisma"></dd>
-            <dt>History: </dt>
-            <dd id = 'history' class = "intelligence"></dd>
-            <dt>Insight: </dt>
-            <dd id = 'insight' class = "wisdom"></dd>
-            <dt>Intimidation: </dt>
-            <dd id = 'intimidation' class = "charisma"></dd>
-            <dt>Investigation: </dt>
-            <dd id = 'investigation' class = "intelligence"></dd>
-            <dt>Medicine: </dt>
-            <dd id = 'medicine' class = "wisdom"></dd>
-            <dt>Nature: </dt>
-            <dd id = 'nature' class = "intelligence"></dd>
-            <dt>Perception: </dt>
-            <dd id = 'perception' class = "wisdom"></dd>
-            <dt>Performance: </dt>
-            <dd id = 'performance' class = "charisma"></dd>
-            <dt>Persuasion: </dt>
-            <dd id = 'persuasion' class = "charisma"></dd>
-            <dt>Religion: </dt>
-            <dd id = 'religion' class = "intelligence"></dd>
-            <dt>Sleight of Hand: </dt>
-            <dd id = 'sleightofhand' class = "dexterity"></dd>
-            <dt>Stealth: </dt>
-            <dd id = 'stealth' class = "dexterity"></dd>
-            <dt>Survival: </dt>
-            <dd id = 'survival' class = "wisdom"></dd>
-        </dl>
-    </div>
-
-    <div class = extrainfo>
-        <label>Feats:</label>
-        <div id= "feats"></div>
-        <br><label>Spells:</label>
-        <div id = "spells"></div>
-    </div>
-
-</div>
+</main>
+<footer>
+    <p>Character Sheet - Nate Jensen</p>
+    <p><a href="https://natej1331.github.io/WDD130/Personal-Siteplan/site-plan.html">Site Plan</a></p>
+</footer>
 
 </body>
 </html>
