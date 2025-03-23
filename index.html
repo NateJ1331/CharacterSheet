@@ -5,128 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character Sheet</title>
     <link rel="icon" href="icon.png" type="image/x-icon"/>
-    <link href="mainStyle.css" rel="stylesheet"  type="text/css">
+    <link href="Styles/styles.css" rel="stylesheet"  type="text/css">
     <script  src="Script.js" defer></script>
 </head>
+    <body>
+        <header>
+            <nav>
+                <img src="Images/Logo.png" alt="Pixel Dragon Head">
+                <a href="index.html">Info</a>
+                <a href="sheet.html">Sheet</a>
+                <a href="character.html">Character</a>
+            </nav>
+        </header>
+        <main>
+            <h1 id = "CC_title">Character Creation</h1>
+            <div id = "all_info">
 
-<body>
-    <header>
-        <nav>
-            <ul>
-            <h2><a href="index.html">Info</a></h2>
-            <h2><a href="sheet.html">Sheet</a></h2>
-            <h2><a href="character.html">Character</a></h2>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <title>This Website is designed to help you on your journey of making a character for Dungeons and Dragons that suits you best</title>
-        
-        <div>
-            <p>Step 1: Choose Your Class
-            Your Class is what defines what your characters "job" is. 
-            It determines what abilities you have and what you can do in the game.</p>
+                <div id = "class_info">
 
-            <p>Barbarian
-            An angry warrior who relies on brute strength to crush their enemies.</p>
+                    <h2 id = "step1">Step 1: Choose Your Class<br>
+                    Your Class is what defines what your characters "job" is. 
+                    It determines what abilities you have and what you can do in the game.</h2>
 
-            <p>Bard
-            A performer who uses their music to cast spells and inspire their allies.</p>
+                    <p class = "left">Barbarian<br>
+                    An angry warrior who relies on brute strength to crush their enemies.</p>
 
-            <p>Cleric
-            A holy warrior who uses divine magic to heal and protect their allies.</p>
+                    <p class = "left">Bard<br>
+                    A performer who uses their music to cast spells and inspire their allies.</p>
 
-            <p>Druid
-            A nature priest who uses the power of the earth to cast spells and shapeshift.</p>
+                    <p class = "left">Cleric<br>
+                    A holy warrior who uses divine magic to heal and protect their allies.</p>
 
-            <p>Fighter
-            A master of combat who uses their skill with weapons and armor to defeat their enemies.</p>
+                    <p class = "left">Druid<br>
+                    A nature priest who uses the power of the earth to cast spells and shapeshift.</p>
 
-            <p>Monk
-            A martial artist who uses their ki to cast spells and defeat their enemies.</p>
-            
-            <p>Paladin
-            A holy warrior who uses their divine magic to smite their enemies and protect their allies.</p>
-            
-            <p>Ranger
-            A hunter who uses their knowledge of the wilderness to track their enemies and protect their allies.</p>
-            
-            <p>Rogue
-            A sneaky thief who uses their cunning and agility to defeat their enemies and steal their treasure.</p>
-            
-            <p>Sorcerer
-            A spellcaster who uses their innate magic to cast spells and defeat their enemies.</p>
-            
-            <p>Warlock
-            A spellcaster who makes a pact with a powerful being to cast spells and defeat their enemies.</p>
-            
-            <p>Wizard
-            A spellcaster who uses their knowledge of magic to cast spells and defeat their enemies.</p>
-        </div>
-        
-        <div>
-            <p>Step 2: Choose Your Origin</p>
-            <p>Your Orgin is based on who/what you are and where you came from.</p>
-            
-            <p>Aasimar
-            Mortals with a celestial heritage. They are often seen as holy warriors or divine messengers.</p>
+                    <p class = "left">Fighter<br>
+                    A master of combat who uses their skill with weapons and armor to defeat their enemies.</p>
 
-            <p>Dragonborn
-            Beings who were created long ago by the Dragon Gods to be a humaniod made in their image</p>
-            
-            <p>Dwarf
-            Short, stocky humanoids who are known for their resilience and affinity for stone and metal.</p>
-            
-            <p>Elf
-            Beings of great beauty and grace who are known for their connection to nature and magic.</p>
-            
-            <p>Gnome
-            Small magical folk who excel at illusions and tinkering with gadgets.</p>
+                    <p class = "left">Monk<br>
+                    A martial artist who uses their ki to cast spells and defeat their enemies.</p>
+                    
+                    <p class = "right">Paladin<br>
+                    A holy warrior who uses their divine magic to smite their enemies and protect their allies.</p>
+                    
+                    <p class = "right">Ranger<br>
+                    A hunter who uses their knowledge of the wilderness to track their enemies and protect their allies.</p>
+                    
+                    <p class = "right">Rogue<br>
+                    A sneaky thief who uses their cunning and agility to defeat their enemies and steal their treasure.</p>
+                    
+                    <p class = "right">Sorcerer<br>
+                    A spellcaster who uses their innate magic to cast spells and defeat their enemies.</p>
+                    
+                    <p class = "right">Warlock<br>
+                    A spellcaster who makes a pact with a powerful being to cast spells and defeat their enemies.</p>
+                    
+                    <p class = "right">Wizard<br>
+                    A spellcaster who uses their knowledge of magic to cast spells and defeat their enemies.</p>
+                </div>
+                
+                <div id = "origin_info">
+                    <h3 id = "step2">Step 2: Choose Your Origin<br>
+                    Your Orgin is based on who/what you are and where you came from.</h3>
+                    
+                    <p class = "left">Aasimar<br>
+                    Mortals with a celestial heritage. They are often seen as holy warriors or divine messengers.</p>
 
-            <p>Goliath
-            Large, powerful humanoids who live in the mountains and are known for their strength and endurance.</p>
+                    <p class = "left">Dragonborn<br>
+                    Beings who were created long ago by the Dragon Gods to be a humaniod made in their image</p>
+                    
+                    <p class = "left">Dwarf<br>
+                    Short, stocky humanoids who are known for their resilience and affinity for stone and metal.</p>
+                    
+                    <p class = "left">Elf<br>
+                    Beings of great beauty and grace who are known for their connection to nature and magic.</p>
+                    
+                    <p class = "right">Gnome<br>
+                    Small magical folk who excel at illusions and tinkering with gadgets.</p>
 
-            <p>Halfling
-            Small, nimble humanoids who are known for their luck and their love of food and drink.</p>
+                    <p class = "right">Goliath<br>
+                    Large, powerful humanoids who live in the mountains and are known for their strength and endurance.</p>
 
-            <p>Human
-            Its a human, you know what a human is.</p>
+                    <p class = "right">Halfling<br>
+                    Small, nimble humanoids who are known for their luck and their love of food and drink.</p>
 
-            <p>Orc
-            Tall and muscular humanoids built to be nomadic warriors.</p>
-            
-            <p>Tiefling
-            Mortals with some kind of fiendish heritage. They are often seen as outcasts or dark heroes.</p>
+                    <p class = "right">Human<br>
+                    Its a human, you know what a human is.</p>
 
-        </div>
-            
-            <p>Step 3: Determine Backround</p>
+                    <p class = "right">Orc<br>
+                    Tall and muscular humanoids built to be nomadic warriors.</p>
+                    
+                    <p class = "right">Tiefling<br>
+                    Mortals with some kind of fiendish heritage. They are often seen as outcasts or dark heroes.</p>
 
-            <p>Your Background is what your character did before they became an adventurer.
-            The list of backrounds is: Acolyte, Artisan, Charlatan, Criminal, Entertainer, Farmer, Guard, Guide, Hermit, Merchant, Noble, Sage, Sailor, Scribe, Soldier, and Wayfarer
-            </p>
+                </div>
 
-            
-            <p> 3: Determine Your Ability Scores</p>
-            <p>Strength
-            How strong you are</p>
-            <p>Dexterity
-            How agile you are</p>
-            <p>Constitution
-            How tough you are</p>
-            <p>Intelligence
-            How smart you are</p>
-            <p>Wisdom
-            How wise you are</p>
-            <p>Charisma
-            How charming you are</p>
-        
-    </main>
+                <div id = "background_info">
+                    <h4 id="step3">Step 3: Determine Backround</h4>
+                    <p>Your Background is what your character did before they became an adventurer.
+                    The list of backrounds is: Acolyte, Artisan, Charlatan, Criminal, Entertainer, Farmer, Guard, Guide, Hermit, Merchant, Noble, Sage, Sailor, Scribe, Soldier, and Wayfarer
+                    </p>
+                </div>
+                <div id = "ability_info">
+                    <h5 id="step4">Step 4: Determine Your Ability Scores<br>
+                    These are your main physical and mental traits</h5>
 
-    <footer>
-        <p>Character Sheet - Nate Jensen</p>
-        <p><a href="https://natej1331.github.io/WDD130/Personal-Siteplan/site-plan.html">Site Plan</a></p>
-    </footer>
-</body>
+                    <p class="left">Strength<br>
+                    How strong you are</p>
+
+                    <p class="left">Dexterity<br>
+                    How agile you are</p>
+
+                    <p class="left">Constitution<br>
+                    How tough you are</p>
+
+                    <p class="right">Intelligence<br>
+                    How smart you are</p>
+
+                    <p class="right">Wisdom<br>
+                    How wise you are</p>
+
+                    <p class="right">Charisma<br>
+                    How charming you are</p>
+                </div>
+
+                <div id = alignment_info>
+                    <h6>Step 5: Chose your Alignment</h6>
+                    <img src="Images/allignment.jpg" alt="D&D Alignment Chart">
+                </div>
+    
+            </div>
+        </main>
+
+        <footer>
+            <p>Character Sheet - Nate Jensen</p>
+            <p><a href="https://natej1331.github.io/WDD130/Personal-Siteplan/site-plan.html">Site Plan</a></p>
+        </footer>
+    </body>
+
 
 </html>
