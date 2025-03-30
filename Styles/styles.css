@@ -149,6 +149,7 @@ footer a:hover{
 }
 
 #bio {
+    font-family: var(--paragraph-font);
     background-color: #990303;
     width:50%;
 }
