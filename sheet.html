@@ -22,10 +22,11 @@
     <main>
         <title>This is the character creator this is where you will input all your stats you got from whatever other information you selected in the first section</title>
 
-        <div id="content">
+        
             <h2>Character Sheet</h2>
             <button id = "save" onclick="SaveData()">Save</button>
             <h5 id = "saved" ></h5>
+            <div id="content">
                 <div id = "bio">
                     <p> Here you will input the Basic information About your character. The level will be decided between you and your DM (Dungeon Master) which will affect the proficiency bonus</p>
                     <dl>
@@ -120,17 +121,16 @@
                     </div>
                 </div>
 
-                <div class = "extrainfo" >
+                <div id = "extrainfo" >
                     <dl>
-                        <p>Your features adn class are also decided by your class as well</p>
+                        <p>Your features and class are also decided by your class as well</p>
                     <br><dt class = "title">Features</dt>
                         <textarea rows = "5" cols = "50" id = "input-feats"></textarea>
                         <dt class = "title">Spells</dt>
                         <textarea rows = "5" cols = "50" id = input-spells></textarea>
                     </dl>
                 </div>
-        </div>
-        
+            </div>
     </main>
 </body>
 </html>
