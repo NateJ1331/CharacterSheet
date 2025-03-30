@@ -148,6 +148,11 @@ footer a:hover{
     text-align: center;
 }
 
+#bio {
+    background-color: #990303;
+    width:50%;
+}
+
 .left, .right {
     width: 48%; 
     text-align: center;

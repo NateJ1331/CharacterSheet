@@ -5,29 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character Sheet</title>
     <link rel="icon" href="icon.png" type="image/x-icon"/>
-    <link href="mainStyle.css" rel="stylesheet"  type="text/css">
+    <link href="Styles/styles.css" rel="stylesheet"  type="text/css">
     <script  src="Script.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-            <h2><a href="index.html">Info</a></h2>
-            <h2><a href="sheet.html">Sheet</a></h2>
-            <h2><a href="character.html">Character</a></h2>
-            </ul>
-        </nav>
+            <nav>
+                <img src="Images/Logo.png" alt="Pixel Dragon Head">
+                <a href="index.html">Info</a>
+                <a href="sheet.html">Sheet</a>
+                <a href="character.html">Character</a>
+            </nav>
     </header>
     <main>
-
         <title>This is the character creator this is where you will input all your stats you got from whatever other information you selected in the first section</title>
 
         <div id="content">
-            <7h2>Character Sheet</h2>
+            <h2>Character Sheet</h2>
             <button id = "save" onclick="SaveData()">Save</button>
             <h5 id = "saved" ></h5>
-                <div class = "bio">
+                <div id = "bio">
                     <p> Here you will input the Basic information About your character. The level will be decided between you and your DM (Dungeon Master) which will affect the proficiency bonus</p>
                     <dl>
                         <dt>Name</dt> 
@@ -42,7 +41,7 @@
                         <input type="number" id = "input-profi">
                     </dl>
                 </div>
-                <div class = skillsattributes>
+                <div id = skillsattributes>
                     <p>Here will be the spot where you put your main stats that will either be done through a point buy system or by rolling 4 d6 dice and dropping the lowest number</p>
                     <div class = "attributes"> 
                         <br><label class = "title">Attributes</label>
