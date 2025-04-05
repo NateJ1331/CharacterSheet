@@ -40,7 +40,7 @@ function SaveData()
 
 function LoadData() // Loads all info
 {
-        var bioInputs = ['name', 'race', 'class', 'level', 'profi'];
+        var bioInputs = ['name', 'species', 'class', 'level', 'profi'];
         var attInputs = [ 'strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma'];
         var skillInputs = ['acrobatics','animalhandling','arcana','athletics','deception','history','insight','intimidation','investigation','medicine','nature','perception','performance','persuasion','religion','sleightofhand','stealth','survival']
         var textInputs = ['feats','spells']
