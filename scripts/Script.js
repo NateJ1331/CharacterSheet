@@ -12,30 +12,27 @@ function DeleteStorage()
 //saves all data thats been inputed
 function SaveData()
 {
-    var character = {};
     var inputs = document.querySelectorAll("input");
-    var textboxes = document.querySelectorAll("textarea");
-    
     inputs.forEach(function(input) {
-        var name  = input.id;
-        
-        if(input.type === 'checkbox'){
-              character[name]= input.checked ? "yes" : "no" ;
-        }else
-            if(input.value)
-            {
-                character[name] = input.value.trim();
-            }
-    });
-    
-    textboxes.forEach(function(text) {
-        if(text.value)
+        if (input.value)
         {
-            character[text.id] = text.value.trum();
+            if (input.type === 'checkbox') {
+                localStorage.setItem(input.id, input.checked ? 3 : 0);
+            } else {
+                var value = input.value.trim();
+                localStorage.setItem(input.id, value);
+            }
         }
     });
 
-    localStorage.setItem("characterData", JSON.stringify(character));
+    var textboxes = document.querySelectorAll("textarea");
+    textboxes.forEach(function(text) {
+        if(text.value)
+        {
+            localStorage.setItem(text.id, text.value);
+        }
+    });
+
     document.querySelector("#saved").innerHTML = "Saved";
 
 }
