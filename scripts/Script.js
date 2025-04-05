@@ -41,7 +41,7 @@ function SaveData()
 }
     
 
-function load() // Loads all info
+function LoadData() // Loads all info
 {
         var bioInputs = ['name', 'race', 'class', 'level', 'profi'];
         var attInputs = [ 'strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma'];
