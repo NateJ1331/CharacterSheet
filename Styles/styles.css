@@ -164,6 +164,7 @@ footer a:hover{
 }
 
 #bio{
+    border: #000000 2px solid;
     width: 100%;
     height: 100%;
     grid-row: 1;
@@ -171,12 +172,14 @@ footer a:hover{
     
 }
 #skillsattributes{
+    border: #000000 2px solid;
     grid-row: 1;
     grid-column: 2;
     width: 100%;
     height: 100%;
 }
 #extrainfo{
+    border: #000000 2px solid;
     grid-row: 2;
     grid-column: 1/3;
     width: 100%;
@@ -190,6 +193,80 @@ footer a:hover{
 
 #attributes{
     margin: 0 auto;
+}
+
+#content3{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 4% 48% 48%;
+    grid-gap: 10px;
+    margin: auto 5%;
+}
+
+#bio_display{
+    background-color: #990303;
+    grid-column: 1/3;
+    margin: 0 auto; 
+    border: #000000 2px solid;
+}
+
+#bio_display dl {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+#bio_display dd {
+    font-weight: bold;
+}
+
+.bio-line {
+    display: flex;
+    gap: .2em;
+    margin-bottom: 0.5em;
+}
+
+.bio-line dt,
+.bio-line dd {
+    margin: 0;
+    padding: 0 0.5em;
+}
+
+#attributes_display{
+    background-color: #990303;
+    grid-row: 2;
+    text-align: center;
+    border: #000000 2px solid;
+}
+#attributes_display dd {
+    font-weight: bold;
+    padding: 0.5em;
+    text-align: center;
+}
+#skills_display{
+    background-color: #990303;
+    grid-row: 2;
+    text-align: center;
+    border: #000000 2px solid;
+}
+#skills_display dd {
+    font-weight: bold;
+    text-align: center;
+}
+
+#extrainfo_display{
+    background-color: #990303;
+    grid-row: 3;
+    grid-column: 1/3;
+    height: 500px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    border: #000000 2px solid;
+}
+
+.feats,.spells{
+    font-weight: bold;
+
 }
 
 .left, .right {

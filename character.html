@@ -19,29 +19,32 @@
     </nav>
 </header>
 <main>
-
-    <div id="content">
-        <h2>Character</h2>
+    <h2>Character</h2>
         
-        <title>This is where your character is diplayed based on the information in the sheet section. You can also use it as a reference to write out your character on physical paper as well</title>
+    <p>This is where your character is diplayed based on the information in the sheet section. 
+        You can also use it as a reference to write out your character on physical paper as well</p>
 
-
-        <div class = bio>
+    <div id="content3">
+        <div id="bio_display">
             <dl>
-                <dt>Name: </dt>
-                <dt id = "name"></dt>
-                <dt>Species: </dt>
-                <dt id = "species"></dt>
-                <dt>Class: </dt>
-                <dt id = "class"></dt>
-                <dt>Lv: </dt>
-                <dt id = "level" ></dt>
-                <dt>Proficiency: </dt>
-                <dt id = "profi" ></dt>
+                <div class="bio-line">
+                    <dt>Name:</dt>
+                    <dd id="name"></dd>
+                    <dt>Species:</dt>
+                    <dd id="species"></dd>
+                    <dt>Class:</dt>
+                    <dd id="class"></dd>
+                </div>
+                <div class="bio-line">
+                    <dt>Lv:</dt>
+                    <dd id="level"></dd>
+                    <dt>Proficiency:</dt>
+                    <dd id="profi"></dd>
+                </div>
             </dl>
         </div>
 
-        <div class = "attributes">
+        <div id = "attributes_display">
             <dl>
                 <dt>Strength: </dt>
                 <dd class = value id = "strength"></dd>
@@ -64,7 +67,7 @@
             </dl>
         </div>
 
-        <div class = "skills">
+        <div id = "skills_display">
             <dl>
                 <dt>Acrobatics: </dt>
                 <dd id = 'acrobatics' class = "dexterity"></dd>
@@ -105,11 +108,11 @@
             </dl>
         </div>
 
-        <div class = extrainfo>
+        <div id = "extrainfo_display">
             <label>Feats:</label>
-            <div id= "feats"></div>
+            <p id= "feats"></p>
             <br><label>Spells:</label>
-            <div id = "spells"></div>
+            <p id = "spells"></p>
         </div>
     </div>
 </main>
